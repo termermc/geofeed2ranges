@@ -1,6 +1,6 @@
 {
 	"name": "geofeed2ranges",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Library to extract IP ranges from an RFC 8805 geofeed",
 	"main": "dist/index.mjs",
 	"type": "module",
