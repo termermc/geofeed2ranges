@@ -1,0 +1,35 @@
+{
+	"name": "geofeed2ranges",
+	"version": "0.1.0",
+	"description": "Library to extract IP ranges from an RFC 8805 geofeed",
+	"main": "dist/index.mjs",
+	"type": "module",
+	"types": "dist/index.d.mts",
+	"typings": "dist/index.d.mts",
+	"scripts": {
+		"build": "tsc",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier --write .",
+		"dopublish": "npm run build && npm publish --access public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/termermc/geofeed2ranges.git"
+	},
+	"keywords": [
+		"geofeed",
+		"cidr",
+		"internet",
+		"converter"
+	],
+	"author": "termer",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/termermc/geofeed2ranges/issues"
+	},
+	"devDependencies": {
+		"@types/node": "^25.0.3",
+		"prettier": "^3.7.4",
+		"typescript": "^5.9.3"
+	}
+}
