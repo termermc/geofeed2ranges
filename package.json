@@ -7,10 +7,10 @@
 	"types": "dist/index.d.mts",
 	"typings": "dist/index.d.mts",
 	"scripts": {
-		"build": "tsc",
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc && rm -rf dist/tests/",
+		"test": "node --test tests/*.mjs",
 		"format": "prettier --write .",
-		"dopublish": "npm run build && npm publish --access public"
+		"dopublish": "npm run test && npm run build && npm publish --access public"
 	},
 	"repository": {
 		"type": "git",
